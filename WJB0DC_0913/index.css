@@ -1,0 +1,36 @@
+
+
+table{
+    width: 100%;
+    background-color:burlywood;
+}
+.table-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+}
+tr{
+    height: 33vh;
+}
+td{
+    width: 100vw;
+    text-align: center;
+}
+.footer{
+    padding-top: 20vh;
+}
+td div{
+    width: 33vh;
+}
+
+img{
+    height: 200px;
+}
+
+.table-a{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
