@@ -11,6 +11,14 @@ table{
     align-items: center;
     gap: 5vw;
 }
+.flexdiv{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items:center;
+    gap: 100px;
+}
 tr{
     height: 33vh;
 }
