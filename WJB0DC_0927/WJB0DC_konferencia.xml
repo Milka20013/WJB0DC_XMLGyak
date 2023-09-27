@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<konferencia>
+    <cim></cim>
+    <helyszin></helyszin>
+    <dátum></dátum>
+    <előadó>
+        <név></név>
+        <adószám></adószám>
+        <lakcím></lakcím>
+    </előadó>
+    <hallgatók>
+        <hallgató>
+            <név></név>
+            <lakcím></lakcím>
+        </hallgató>
+    </hallgatók>
+</konferencia>

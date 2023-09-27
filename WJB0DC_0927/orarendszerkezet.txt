@@ -1,0 +1,13 @@
+<WJB0DC_orarend> 
+    <tantargy id="ora1" tipus="">
+        <kurzusnev></kurzusnev>
+        <szak></szak>
+        <idopont>
+            <nap></nap>
+            <kezdes></kezdes>
+            <vege></vege>
+        </idopont>
+        <terem></terem>
+        <eloado></eloado>
+    </tantargy>
+</WJB0DC_orarend>
