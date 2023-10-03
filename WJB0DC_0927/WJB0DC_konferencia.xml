@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <konferencia>
-    <cim></cim>
-    <helyszin></helyszin>
-    <dátum></dátum>
+    <cim>valami</cim>
+    <helyszin>valahol</helyszin>
+    <dátum>yyy/mm/dd</dátum>
     <előadó>
-        <név></név>
-        <adószám></adószám>
-        <lakcím></lakcím>
+        <név>valaki</név>
+        <adószám>0</adószám>
+        <lakcím>valahol</lakcím>
     </előadó>
     <hallgatók>
         <hallgató>
-            <név></név>
-            <lakcím></lakcím>
+            <név>valaki</név>
+            <lakcím>valahol</lakcím>
         </hallgató>
     </hallgatók>
 </konferencia>
