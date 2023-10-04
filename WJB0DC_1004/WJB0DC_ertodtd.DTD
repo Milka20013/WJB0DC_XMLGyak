@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!ELEMENT C (B*)>
+<!ELEMENT B (A*)>
+<!ELEMENT A EMPTY>
+
+<!ATTLIST A a ID #REQUIRED>
+<!ATTLIST A b (x|y) #IMPLIED>
+<!ATTLIST A c (d|e) #IMPLIED>
+
+
+<!ATTLIST B a ID #REQUIRED>
+<!ATTLIST B b (x|y) #IMPLIED>
+
+
+<!ATTLIST C a ID #REQUIRED>
+<!ATTLIST C b CDATA #IMPLIED>

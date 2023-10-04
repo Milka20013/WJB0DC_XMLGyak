@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE C SYSTEM "WJB0DC_ertodtd.dtd">
+
+<C a="valamiid1" b="asd">
+    <B a="valamiid2" b="x">
+        <A a="valamiid3" b="x" c="d"/>
+    </B>
+    <B a="valamiid4" b="y">
+        <A a="valamiid5" b="y" c="d"/>
+        <A a="valamiid6" b="x" c="e"/>
+    </B>
+</C>

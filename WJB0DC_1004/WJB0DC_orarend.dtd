@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!ELEMENT WJB0DC_orarend (ora+)>
+<!ATTLIST WJB0DC_orarend id ID #REQUIRED>
+<!ATTLIST WJB0DC_orarend tipus (elmélet | gyakorlat) "elmélet">
+
+<!ELEMENT targy (#PCDATA)>
+<!ELEMENT idopont (nap,tol,ig)>
+
+<!ELEMENT nap (#PCDATA)>
+<!ELEMENT tol (#PCDATA)>
+<!ELEMENT ig  (#PCDATA)>
+
+<!ELEMENT helyszin (#PCDATA)>
+<!ELEMENT oktato (#PCDATA)>
+<!ELEMENT szak (#PCDATA)>
