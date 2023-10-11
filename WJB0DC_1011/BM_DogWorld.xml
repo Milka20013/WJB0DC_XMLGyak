@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<konyvek xmlns:xs="https://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="DogWorld.xsd">
+    <konyv isbn="000000">
+        <cim>DogWorld</cim>
+        <szerzo>Charles M. Patrick</szerzo>
+        <szereplo>
+            <nev>Snoopy</nev>
+            <baratja>Patty</baratja>
+            <szuletett>2010-10-04</szuletett>
+            <jellemzes>extrovertalt beagle</jellemzes>
+        </szereplo>
+        <szereplo>
+            <nev>Patty</nev>
+            <szuletett>2010-08-22</szuletett>
+            <jellemzes>vakmerő leány</jellemzes>
+        </szereplo>
+    </konyv>
+</konyvek >
