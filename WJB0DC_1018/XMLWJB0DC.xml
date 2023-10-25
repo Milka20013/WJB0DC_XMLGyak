@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<fesztivalok>
+    <fesztival id="fesztival0">
+        <nev>Sziget fesztivál</nev>
+        <helyszin> Margit sziget</helyszin>
+        <ev>2023</ev>
+        <tulajdonos id="tulajdonos0">
+            <nev>Lakatos Tibor</nev>
+            <adoszam>0812748591</adoszam>
+            <alapitas>2000</alapitas>
+            <bevetel>150000000</bevetel>
+        </tulajdonos>
+        <bar id="bar0">
+            <nev>Italbár</nev>
+            <ceg>Coca-Cola</ceg>
+            <ital>víz</ital>
+            <ital>sör</ital>
+            <alkalmazott id="alkalmazott0">
+                <nev>Józsi</nev>
+                <muszak>hétfő 21-23</muszak>
+                <muszak>kedd 21-23</muszak>
+                <fizetes>500000</fizetes>
+            </alkalmazott>
+        </bar>
+        <resztvevo id="resztvevo0">
+            <nev>Kiss Tamás</nev>
+            <diakigazolvany>721539647582</diakigazolvany>
+            <lakcim>
+                <telepules>Bag</telepules>
+                <utca>Károly Róbert</utca>
+                <hazszam>5</hazszam>
+            </lakcim>
+            <nyelvtudas id="nyelvtudas0">
+                <nyelv>angol</nyelv>
+                <szint>A1</szint>
+            </nyelvtudas>
+        </resztvevo>
+        <fellepo id="fellepo0">
+            <nev>Hanna Montana</nev>
+            <orszag>Brazil</orszag>
+            <dij>50000000</dij>
+        </fellepo>
+    </fesztival>
+    <fesztival id="fesztival1">
+        <nev>Party fesztivál</nev>
+        <helyszin> Budapest</helyszin>
+        <ev>2023</ev>
+        <tulajdonos id="tulajdonos1">
+            <nev>Lakatos János</nev>
+            <adoszam>0812747591</adoszam>
+            <alapitas>2001</alapitas>
+            <bevetel>100000000</bevetel>
+        </tulajdonos>
+        <bar id="bar1">
+            <nev>Italbár</nev>
+            <ceg>Dr. Pepper</ceg>
+            <ital>víz</ital>
+            <ital>Dr. Pepper</ital>
+            <alkalmazott id="alkalmazott1">
+                <nev>Mari</nev>
+                <muszak>hétfő 21-23</muszak>
+                <fizetes>450000</fizetes>
+            </alkalmazott>
+        </bar>
+        <resztvevo id="resztvevo1">
+            <nev>Kiss Mária</nev>
+            <diakigazolvany>721539647621</diakigazolvany>
+            <lakcim>
+                <telepules>Bagdad</telepules>
+                <utca>Saint Jones</utca>
+                <hazszam>5</hazszam>
+            </lakcim>
+            <nyelvtudas id="nyelvtudas0">
+                <nyelv>angol</nyelv>
+                <szint>A1</szint>
+            </nyelvtudas>
+        </resztvevo>
+        <fellepo id="fellepo1">
+            <nev>Maroon 5</nev>
+            <orszag>Amerika</orszag>
+            <dij>700000000</dij>
+        </fellepo>
+    </fesztival>
+</fesztivalok>

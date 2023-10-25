@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+<xs:element name="nev" type="xs:string"/>
+<xs:element name="helyszin" type="xs:string"/>
+<xs:element name="ev" type="xs:integer"/>
+<xs:element name="adoszam" type="xs:integer"/>
+<xs:element name="alapitas" type="xs:string"/>
+<xs:element name="bevetel" type="xs:integer"/>
+<xs:element name="ceg" type="xs:string"/>
+<xs:element name="ital" type="xs:string"/>
+<xs:element name="muszak" type="xs:string"/>
+<xs:element name="fizetes" type="xs:integer"/>
+<xs:element name="telepules" type="xs:string"/>
+<xs:element name="utca" type="xs:string"/>
+<xs:element name="hazszam" type="xs:integer"/>
+<xs:element name="nyelv" type="xs:string"/>
+<xs:element name="szint" type="xs:string"/>
+<xs:element name="orszag" type="xs:string"/>
+<xs:element name="dij" type="xs:integer"/>
+
+
+
+ </xs:schema>
