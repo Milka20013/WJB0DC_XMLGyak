@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
+    <!-- Egyszerű típusok -->
+    <xs:element name="nev" type="xs:string" />
+    <xs:element name="alapito_tag" type="xs:string" />
+    <xs:element name="eletkor" type="xs:integer" />
+    <xs:element name="szuletesi_datum" type="DatumTipus" />
+    <xs:element name="alapitas_datuma" type="DatumTipus" />
+    <xs:element name="osszeg" type="xs:integer" />
+    <xs:element name="orszag" type="xs:string" />
+    <xs:element name="jatektipus" type="JatekTipusTipus" />
+    <xs:element name="mettol" type="xs:integer" />
+    <xs:element name="meddig" type="xs:integer" />
+    <xs:element name="helyezes" type="HelyezesTipus" />
+    <xs:element name="datum" type="DatumTipus" />
+    <xs:element name="helyszin" type="xs:string" />
+
+    <!-- Saját típusok -->
+    <xs:simpleType name="DatumTipus">
+        <xs:restriction base="xs:date">
+            <xs:minInclusive value="1900-01-01" />
+            <xs:maxInclusive value="2023-12-31" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="JatekTipusTipus">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Lövöldözős"></xs:enumeration>
+            <xs:enumeration value="Több játékos"></xs:enumeration>
+            <xs:enumeration value="Akció"></xs:enumeration>
+            <xs:enumeration value="MOBA"></xs:enumeration>
+            <xs:enumeration value="Stratégia"></xs:enumeration>
+            <xs:enumeration value="Labdarúgás"></xs:enumeration>
+            <xs:enumeration value="Ügyességi"></xs:enumeration>
+
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="HelyezesTipus">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1" />
+            <xs:maxInclusive value="99"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <!-- Komplex típusok -->
+    <xs:complexType name="SzponzorTipus">
+        <xs:sequence>
+            <xs:element ref="nev" />
+            <xs:element ref="osszeg" />
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="CsapatTipus">
+        <xs:sequence>
+            <xs:element ref="alapitas_datuma"/>
+            <xs:element name="Szponzor" type="SzponzorTipus" />
+            <xs:element ref="alapito_tag" minOccurs="1" maxOccurs="10"/>
+        </xs:sequence>
+        <xs:attribute name="CSAzon" type="xs:string" />
+    </xs:complexType>
+
+    <xs:complexType name="JatekosTipus">
+        <xs:sequence>
+            <xs:element ref="nev" />
+            <xs:element ref="orszag" />
+            <xs:element ref="szuletesi_datum"/>
+            <xs:element ref="eletkor"/>
+        </xs:sequence>
+        <xs:attribute name="PAzon" type="xs:integer" />
+        <xs:attribute name="CSAzon" type="xs:string" />
+        <xs:attribute name="JAzon" type="xs:integer" />
+    </xs:complexType>
+
+    <xs:complexType name="JatekTipus">
+        <xs:sequence>
+            <xs:element ref="nev" />
+            <xs:element name="jatektipus" type="JatekTipusTipus" minOccurs="1" maxOccurs="10"/>
+        </xs:sequence>
+        <xs:attribute name="JAzon" type="xs:integer" />
+    </xs:complexType>
+
+    <xs:complexType name="VersenyszamTipus">
+        <xs:attribute name="JAzon" type="xs:integer" />
+        <xs:attribute name="VAzon" type="xs:integer" />
+    </xs:complexType>
+
+    <xs:complexType name="VezetoTipus">
+        <xs:sequence>
+            <xs:element ref="nev" />
+            <xs:element ref="szuletesi_datum"/>
+            <xs:element ref="mettol"/>
+            <xs:element ref="meddig" minOccurs="0"/>
+            <xs:element ref="eletkor"/>
+        </xs:sequence>
+        <xs:attribute name="LAzon" type="xs:integer" />
+        <xs:attribute name="CSAzon" type="xs:string" />
+    </xs:complexType>
+
+    <xs:complexType name="VersenyezTipus">
+        <xs:sequence>
+            <xs:element ref="helyezes" />
+        </xs:sequence>
+        <xs:attribute name="CSAzon" type="xs:string" />
+        <xs:attribute name="VAzon" type="xs:integer" />
+    </xs:complexType>
+
+    <xs:complexType name="VersenyTipus">
+        <xs:sequence>
+            <xs:element ref="nev" />
+            <xs:element ref="datum" />
+            <xs:element ref="helyszin" />
+        </xs:sequence>
+        <xs:attribute name="VAzon" type="xs:integer" />
+    </xs:complexType>
+
+    <!-- Elemek -->
+    <xs:element name="WJB0DC_ESportok">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Csapat" type="CsapatTipus" maxOccurs="unbounded" />
+                <xs:element name="Jatekos" type="JatekosTipus" maxOccurs="unbounded" />
+                <xs:element name="Jatek" type="JatekTipus" maxOccurs="unbounded" />
+                <xs:element name="Versenyszam" type="VersenyszamTipus" maxOccurs="unbounded" />
+                <xs:element name="Vezeto" type="VezetoTipus" maxOccurs="unbounded" />
+                <xs:element name="Versenyez" type="VersenyezTipus" maxOccurs="unbounded" />
+                <xs:element name="Verseny" type="VersenyTipus" maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+
+        <!--Elsődleges kulcsok-->
+
+        <xs:key name="CsapatKulcs">
+            <xs:selector xpath="Csapat" />
+            <xs:field xpath="@CSAzon" />
+        </xs:key>
+
+        <xs:key name="JatekosKulcs">
+            <xs:selector xpath="Jatekos" />
+            <xs:field xpath="@PAzon" />
+        </xs:key>
+
+        <xs:key name="JatekKulcs">
+            <xs:selector xpath="Jatek" />
+            <xs:field xpath="@JAzon" />
+        </xs:key>
+
+        <xs:key name="VezetoKulcs">
+            <xs:selector xpath="Vezeto" />
+            <xs:field xpath="@LAzon" />
+        </xs:key>
+
+        <xs:key name="VersenyKulcs">
+            <xs:selector xpath="Verseny" />
+            <xs:field xpath="@VAzon" />
+        </xs:key>
+
+        <!-- Idegen kulcsok -->
+
+        <xs:keyref name="JatekosCsapatKulcs" refer="CsapatKulcs">
+            <xs:selector xpath="Jatekos" />
+            <xs:field xpath="@CSAzon" />
+        </xs:keyref>
+
+        <xs:keyref name="JatekosJatekKulcs" refer="JatekKulcs">
+            <xs:selector xpath="Jatekos" />
+            <xs:field xpath="@JAzon" />
+        </xs:keyref>
+
+        <xs:keyref name="VersenyszamJatekKulcs" refer="JatekKulcs">
+            <xs:selector xpath="Versenyszam" />
+            <xs:field xpath="@JAzon" />
+        </xs:keyref>
+
+        <xs:keyref name="VersenyszamVersenyKulcs" refer="VersenyKulcs">
+            <xs:selector xpath="Versenyszam" />
+            <xs:field xpath="@VAzon" />
+        </xs:keyref>
+
+        <xs:keyref name="VezetoCsapatKulcs" refer="CsapatKulcs">
+            <xs:selector xpath="Vezeto" />
+            <xs:field xpath="@CSAzon" />
+        </xs:keyref>
+
+        <xs:keyref name="VersenyezCsapatKulcs" refer="CsapatKulcs">
+            <xs:selector xpath="Versenyez" />
+            <xs:field xpath="@CSAzon" />
+        </xs:keyref>
+
+        <xs:keyref name="VersenyezVersenyKulcs" refer="VersenyKulcs">
+            <xs:selector xpath="Versenyez" />
+            <xs:field xpath="@VAzon" />
+        </xs:keyref>
+    </xs:element>
+</xs:schema>
