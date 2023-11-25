@@ -1,6 +1,7 @@
 package hu.domparse.WJB0DC;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 
 import javax.xml.parsers.DocumentBuilder;
@@ -11,7 +12,8 @@ import org.w3c.dom.*;
 import org.xml.sax.SAXException;
 
 public class DOMReadWJB0DC {
-	public static void ReadDocument(String filePath) {
+	private static FileWriter writer;
+	public static void ReadDocument(String filePath, String outputFilePath) {
 		//létrehozzuk a szükséges adatstruktúrákat, hogy beolvashassuk a dokumentumot
 		DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 		try {
@@ -20,7 +22,9 @@ public class DOMReadWJB0DC {
 			Document document = db.parse(new File(filePath));
 			document.getDocumentElement().normalize();
 			//kiirjuk a tartalmát úgy, ahogy eredetileg volt
+			writer = new FileWriter(outputFilePath);
 			PrintDocument(document);
+			writer.close();
 		} catch (ParserConfigurationException | SAXException | IOException e) {
 			e.printStackTrace();
 		}
@@ -30,7 +34,7 @@ public class DOMReadWJB0DC {
 	public static void PrintDocument(Document document) {
 		Element root = document.getDocumentElement();
 		//kiirjuk a fájl tetejét ami minden xml dokumentum elején van
-		System.out.println("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
+		Println("<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n");
 		PrintNodes(root,0);
 
 	}
@@ -54,15 +58,15 @@ public class DOMReadWJB0DC {
 		}
 		String formatting = builder.toString();
 		//kiirjuk a node elejét, pl. <Csapat
-		System.out.print(formatting +"<" + node.getNodeName());
+		Print(formatting +"<" + node.getNodeName());
 		NamedNodeMap nodeMap = node.getAttributes();
 		for (int i = 0; i < nodeMap.getLength(); i++) {
 			//kiirjuk az attribútomokat, értékkel együtt -> <Csapat CSAzon="Kerge Kecskék" ...
 			Node attr = nodeMap.item(i);
-			System.out.print(" " + attr.getNodeName() + "=\"" + attr.getNodeValue() + "\"");
+			Print(" " + attr.getNodeName() + "=\"" + attr.getNodeValue() + "\"");
 		}
 		//lezárjuk az adott node-ot, pl. <Csapat CSAzon="Kerge Kecskék">
-		System.out.print(">");
+		Print(">");
 		
 		//kiirjuk  a beágyazott nodeokat (gyerek nodeok)
 		NodeList children = node.getChildNodes();
@@ -70,10 +74,10 @@ public class DOMReadWJB0DC {
 			//ha a node maga a szöveg, akkor kiírjuk pl.
 			//<nev> volt idáig, majd ebből
 			//<nev>Nestlé
-			System.out.print(children.item(0).getNodeValue());
+			Print(children.item(0).getNodeValue());
 		} else if (!(children.getLength() == 0)){
 			//nem csak egy szöveg, tehát rekurzívan kiirjuk a gyerek node-okat
-			System.out.println();
+			Println("");
 			for (int i = 0; i < children.getLength(); i++) {
 				PrintNodes(children.item(i),nodeRank + 1);
 			}
@@ -81,17 +85,38 @@ public class DOMReadWJB0DC {
 		else {
 			//ez akkor kell, ha üres volt a node
 			//ekkor <node></node> íródik ki és visszatérünk
-			System.out.print("</" + node.getNodeName() + ">\n");
+			Print("</" + node.getNodeName() + ">\n");
 			return;
 		}
 		//ez akkor igaz, ha nem szöveg volt a node
 		//ekkor eltoljuk a szöveget
 		if(!(children.getLength() == 1 && children.item(0).getNodeType() == Node.TEXT_NODE))
 		{
-			System.out.print(formatting);
+			Print(formatting);
 		}
 		//kiírjuk a node végét
-		System.out.println("</" + node.getNodeName() + ">");
+		Println("</" + node.getNodeName() + ">");
 
+	}
+	
+	private static void Print(String text)
+	{
+		System.out.print(text);
+		try {
+			writer.write(text);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	private static void Println(String text)
+	{
+		System.out.println(text);
+		try {
+			writer.write(text + "\n");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }
