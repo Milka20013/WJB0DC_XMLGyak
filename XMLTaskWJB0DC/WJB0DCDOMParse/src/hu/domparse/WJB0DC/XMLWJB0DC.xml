@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<WJB0DC_ESportok xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="XMLSchemaWJB0DC.xsd" >
+
+    <!-- Csapatok -->
+    <Csapat CSAzon="Kerge Kecskék">
+        <alapitas_datuma>2002-04-06</alapitas_datuma>
+        <Szponzor>
+            <nev>Nestlé</nev>
+            <osszeg>50000</osszeg>
+        </Szponzor>
+        <alapito_tag>Kiss János</alapito_tag>
+        <alapito_tag>Nagy Martin</alapito_tag>
+    </Csapat>
+    <Csapat CSAzon="Zöld Békák">
+        <alapitas_datuma>2002-04-06</alapitas_datuma>
+        <Szponzor>
+            <nev>Nestlé</nev>
+            <osszeg>75000</osszeg>
+        </Szponzor>
+        <alapito_tag>Magyar Márk</alapito_tag>
+        <alapito_tag>Kossuth Máté</alapito_tag>
+    </Csapat>
+    <Csapat CSAzon="Kutyások">
+        <alapitas_datuma>2002-05-01</alapitas_datuma>
+        <Szponzor>
+            <nev>FIFA</nev>
+            <osszeg>100000</osszeg>
+        </Szponzor>
+        <alapito_tag>Nemes Géza</alapito_tag>
+    </Csapat>
+
+    <!--Játékosok-->
+    <Jatekos PAzon="1" CSAzon="Kerge Kecskék" JAzon="1">
+        <nev>Havas Henrik</nev>
+        <orszag>Magyarország</orszag>
+        <szuletesi_datum>1998-12-01</szuletesi_datum>
+        <eletkor>24</eletkor>
+    </Jatekos>
+    <Jatekos PAzon="2" CSAzon="Kerge Kecskék" JAzon="1">
+        <nev>Arany Anna</nev>
+        <orszag>Magyarország</orszag>
+        <szuletesi_datum>2003-11-18</szuletesi_datum>
+        <eletkor>20</eletkor>
+    </Jatekos>
+    <Jatekos PAzon="3" CSAzon="Zöld Békák" JAzon="1">
+        <nev>Kiss Anita</nev>
+        <orszag>Magyarország</orszag>
+        <szuletesi_datum>1999-10-11</szuletesi_datum>
+        <eletkor>24</eletkor>
+    </Jatekos>
+    <Jatekos PAzon="4" CSAzon="Zöld Békák" JAzon="1">
+        <nev>Nagy Hugó</nev>
+        <orszag>Magyarország</orszag>
+        <szuletesi_datum>1999-07-11</szuletesi_datum>
+        <eletkor>24</eletkor>
+    </Jatekos>
+    <Jatekos PAzon="5" CSAzon="Kutyások" JAzon="2">
+        <nev>Németh Ottó</nev>
+        <orszag>Magyarország</orszag>
+        <szuletesi_datum>2000-05-07</szuletesi_datum>
+        <eletkor>23</eletkor>
+    </Jatekos>
+    <Jatekos PAzon="6" CSAzon="Kutyások" JAzon="2">
+        <nev>Ding Liren</nev>
+        <orszag>Kína</orszag>
+        <szuletesi_datum>1995-12-01</szuletesi_datum>
+        <eletkor>28</eletkor>
+    </Jatekos>
+
+    <!-- Játékok -->
+    <Jatek JAzon="1">
+        <nev>CS-GO</nev>
+        <jatektipus>Lövöldözős</jatektipus>
+        <jatektipus>Több játékos</jatektipus>
+        <jatektipus>Akció</jatektipus>
+    </Jatek>
+    <Jatek JAzon="2">
+        <nev>LoL</nev>
+        <jatektipus>MOBA</jatektipus>
+        <jatektipus>Több játékos</jatektipus>
+        <jatektipus>Stratégia</jatektipus>
+    </Jatek>
+    <Jatek JAzon="3">
+        <nev>FIFA</nev>
+        <jatektipus>Labdarúgás</jatektipus>
+        <jatektipus>Több játékos</jatektipus>
+        <jatektipus>Ügyességi</jatektipus>
+    </Jatek>
+
+    <!-- Versenyszámok (kapcsoló tábla) -->
+    <Versenyszam JAzon="1" VAzon="1"></Versenyszam>
+    <Versenyszam JAzon="1" VAzon="2"></Versenyszam>
+    <Versenyszam JAzon="2" VAzon="3"></Versenyszam>
+    <Versenyszam JAzon="1" VAzon="3"></Versenyszam>
+    <Versenyszam JAzon="2" VAzon="4"></Versenyszam>
+
+    <!-- Vezetők -->
+    <Vezeto LAzon="1" CSAzon="Kerge Kecskék">
+        <nev>Alantas Balázs</nev>
+        <szuletesi_datum>1975-04-01</szuletesi_datum>
+        <mettol>2002</mettol>
+        <meddig>2008</meddig>
+        <eletkor>48</eletkor>
+    </Vezeto>
+    <Vezeto LAzon="2" CSAzon="Kerge Kecskék">
+        <nev>Kovács Ágnes</nev>
+        <szuletesi_datum>1982-09-21</szuletesi_datum>
+        <mettol>2008</mettol>
+        <eletkor>41</eletkor>
+    </Vezeto>
+    <Vezeto LAzon="3" CSAzon="Zöld Békák">
+        <nev>Tóth Szilvia</nev>
+        <szuletesi_datum>1979-12-24</szuletesi_datum>
+        <mettol>2002</mettol>
+        <eletkor>41</eletkor>
+    </Vezeto>
+    <Vezeto LAzon="4" CSAzon="Kutyások">
+        <nev>Németh László</nev>
+        <szuletesi_datum>1970-01-16</szuletesi_datum>
+        <mettol>2002</mettol>
+        <eletkor>53</eletkor>
+    </Vezeto>
+
+    <!-- Versenyez kapcsoló táblák -->
+    <Versenyez CSAzon="Kerge Kecskék" VAzon="1">
+        <helyezes>1</helyezes>
+    </Versenyez>
+    <Versenyez CSAzon="Zöld Békák" VAzon="1">
+        <helyezes>2</helyezes>
+    </Versenyez>
+    <Versenyez CSAzon="Kutyások" VAzon="3">
+        <helyezes>1</helyezes>
+    </Versenyez>
+    <Versenyez CSAzon="Kutyások" VAzon="4">
+        <helyezes>1</helyezes>
+    </Versenyez>
+
+     <!-- Versenyek -->
+     <Verseny VAzon="1">
+        <nev>CS-GO Championship Las Vegas</nev>
+        <datum>2010-10-04</datum>
+        <helyszin>Las Vegas</helyszin>
+     </Verseny>
+     <Verseny VAzon="2">
+        <nev>CS-GO Championship Dublin</nev>
+        <datum>2012-10-04</datum>
+        <helyszin>Dublin</helyszin>
+     </Verseny>
+     <Verseny VAzon="3">
+        <nev>ESport Cup</nev>
+        <datum>2014-05-04</datum>
+        <helyszin>Berlin</helyszin>
+     </Verseny>
+     <Verseny VAzon="4">
+        <nev>Play IT!</nev>
+        <datum>2020-10-10</datum>
+        <helyszin>Budapest</helyszin>
+     </Verseny>
+    
+
+</WJB0DC_ESportok>
