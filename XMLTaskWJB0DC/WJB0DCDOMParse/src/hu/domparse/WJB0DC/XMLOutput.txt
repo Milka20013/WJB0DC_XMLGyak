@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<WJB0DC_ESportok xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLSchemaWJB0DC.xsd">
+<WJB0DC_ESportokxmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"xsi:noNamespaceSchemaLocation="XMLSchemaWJB0DC.xsd">
    <Csapat CSAzon="Kerge Kecskék">
       <alapitas_datuma>2002-04-06</alapitas_datuma>
       <Szponzor>
@@ -143,4 +142,4 @@
       <datum>2020-10-10</datum>
       <helyszin>Budapest</helyszin>
    </Verseny>
-</WJB0DC_ESportok>
+<WJB0DC_ESportok/>
