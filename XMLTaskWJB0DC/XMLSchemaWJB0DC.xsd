@@ -194,5 +194,12 @@
             <xs:selector xpath="Versenyez" />
             <xs:field xpath="@VAzon" />
         </xs:keyref>
+
+        <!-- 1:1 kapcsolat-->
+
+        <xs:unique name="CsapatVezetoKulcs">
+            <xs:selector xpath="VezetoKulcs" />
+            <xs:field xpath="@CSAzon" />
+        </xs:unique>
     </xs:element>
 </xs:schema>
