@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<WJB0DC_kurzusfelvetel tanev="2023/2024" egyetem="ME" xmlns:xs="https://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="BM_Kurzusfelvetel.xsd">
+<WJB0DC_kurzusfelvetel xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="BM_Kurzusfelvetel.xsd" tanev="2023/2024" egyetem="ME">
     <hallgato>
         <hnev>Bordás Milán</hnev>
         <szulev>2002</szulev>
         <szak evf="3">Programtervező informatikus</szak>
     </hallgato>
     <kurzusok>
-        <kurzus id="0" jovahagyas="igen">
+        <kurzus id="0" nyelv="magyar" jovahagyas="igen">
             <kurzusnev>XML</kurzusnev>
             <kredit>5</kredit>
             <hely>30</hely>
             <idopont>szerda 12-14</idopont>
             <oktato>Dr. Bednarik László</oktato>
         </kurzus>
-        <kurzus id="1">
+        <kurzus id="1" nyelv="magyar">
             <kurzusnev>Mesterséges intelligencia</kurzusnev>
             <kredit>5</kredit>
             <hely>120</hely>
@@ -21,12 +22,19 @@
             <oktato>Dr. Kunné Tamás Judit</oktato>
             <oraado>Fazekas Levente</oraado>
         </kurzus>
-        <kurzus id="2" jovahagyas="nem">
+        <kurzus id="2" nyelv="magyar" jovahagyas="nem">
             <kurzusnev>Játék prototipusok</kurzusnev>
             <kredit>5</kredit>
             <hely>10</hely>
             <idopont>csütörtök 16-20</idopont>
             <oktato>Kiss Áron</oktato>
         </kurzus>
+        <kurzus id="3" nyelv="magyar">
+            <kurzusnev>Vállalati Információs Rendszerek</kurzusnev>
+            <kredit>5</kredit>
+            <hely>60</hely>
+            <idopont>szerda 14-16</idopont>
+            <oktato>Dr. Sasvári Péter</oktato>
+          </kurzus>
     </kurzusok>
 </WJB0DC_kurzusfelvetel>

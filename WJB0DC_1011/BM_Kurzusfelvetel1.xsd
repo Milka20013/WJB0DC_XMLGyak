@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="WJB0DC_kurzusfelvetel">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="hallgato">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="hnev" type="xs:string" />
+                            <xs:element name="szulev" type="xs:string" />
+                            <xs:element name="szak">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="evf" type="xs:integer"
+                                                use="required" />
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="kurzusok">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="kurzus" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="kurzusnev" type="xs:string" />
+                                        <xs:element name="kredit" type="xs:string" />
+                                        <xs:element name="hely" type="xs:string" />
+                                        <xs:element name="idopont" type="xs:string" />
+                                        <xs:element name="oktato" type="xs:string" />
+                                        <xs:element name="oraado" minOccurs="0" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="id" type="xs:integer" use="required" />
+                                    <xs:attribute name="nyelv" use="required" />
+                                    <xs:attribute name="jovahagyas" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="tanev" use="required" />
+            <xs:attribute name="egyetem" use="required" />
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
