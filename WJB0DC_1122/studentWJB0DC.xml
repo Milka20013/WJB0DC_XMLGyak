@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<class xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="studentKLNSPG.xsd">
+    <student student_id="1">
+        <vezeteknev>Magyar</vezeteknev>
+        <keresztnev>Martin</keresztnev>
+        <becenev>Marti</becenev>
+        <kor>21</kor>
+    </student>
+
+    <student student_id="2">
+        <vezeteknev>Bordás</vezeteknev>
+        <keresztnev>Milán</keresztnev>
+        <becenev>Milán</becenev>
+        <kor>21</kor>
+    </student>
+
+    <student student_id="3">
+        <vezeteknev>Takács</vezeteknev>
+        <keresztnev>Polett</keresztnev>
+        <becenev>Polli</becenev>
+        <kor>20</kor>
+    </student>
+
+     <student student_id="4">
+         <vezeteknev>Kundrák</vezeteknev>
+        <keresztnev>Ádám</keresztnev>
+        <becenev>Ádi</becenev>
+        <kor>22</kor>
+    </student>
+
+    <student student_id="5">
+        <vezeteknev>Laczai</vezeteknev>
+        <keresztnev>Lénárd</keresztnev>
+        <becenev>Leni</becenev>
+        <kor>21</kor>
+    </student>
+</class>
