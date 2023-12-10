@@ -1,0 +1,116 @@
+{
+    "WJB0DC_orarend": {
+      "ora": [
+        {
+          "targy": "Mesterséges intelligencia",
+          "idopont": {
+            "nap": "kedd",
+            "tol": 10,
+            "ig": 12
+          },
+          "helyszin": "XXXII A1 magasfsz",
+          "oktato": "Kunné Dr. Tamás Judit",
+          "szak": "programtervező informatikus"
+        },
+        {
+          "targy": "Adatkezelés XML-ben",
+          "idopont": {
+            "nap": "kedd",
+            "tol": 12,
+            "ig": 14
+          },
+          "helyszin": "XXXII A1 magasfsz",
+          "oktato": "Dr. Bednarik László",
+          "szak": "programtervező informatikus"
+        },
+        {
+          "targy": "Algoritmusok és vizsgálatuk",
+          "idopont": {
+            "nap": "kedd",
+            "tol": 14,
+            "ig": 16
+          },
+          "helyszin": "A1/320 III emelet",
+          "oktato": "Dr. Házy Attila",
+          "szak": "programtervező informatikus"
+        },
+        {
+          "targy": "Algoritmusok és vizsgálatuk",
+          "idopont": {
+            "nap": "kedd",
+            "tol": 16,
+            "ig": 18
+          },
+          "helyszin": "A1/320 III emelet",
+          "oktato": "Dr. Házy Attila",
+          "szak": "programtervező informatikus"
+        },
+        {
+          "targy": "Adatkezelés XML-ben",
+          "idopont": {
+            "nap": "szerda",
+            "tol": 12,
+            "ig": 14
+          },
+          "helyszin": "Ln/103",
+          "oktato": "Dr. Bednarik László",
+          "szak": "programtervező informatikus"
+        },
+        {
+          "targy": "Vállalati információs rendszerek",
+          "idopont": {
+            "nap": "kedd",
+            "tol": 12,
+            "ig": 14
+          },
+          "helyszin": "Ln/101",
+          "oktato": "Dr. Sasvári Péter",
+          "szak": "programtervező informatikus"
+        },
+        {
+          "targy": "Vállalati információs rendszerek",
+          "idopont": {
+            "nap": "kedd",
+            "tol": 18,
+            "ig": 20
+          },
+          "helyszin": "Ln/101",
+          "oktato": "Dr. Sasvári Péter",
+          "szak": "programtervező informatikus"
+        },
+        {
+          "targy": "Mesterséges intelligencia",
+          "idopont": {
+            "nap": "csütörtök",
+            "tol": 10,
+            "ig": 12
+          },
+          "helyszin": "I A2 fsz",
+          "oktato": "Fazekas Levente",
+          "szak": "programtervező informatikus"
+        },
+        {
+          "targy": "Játék prototípusok",
+          "idopont": {
+            "nap": "csütörtök",
+            "tol": 16,
+            "ig": 18
+          },
+          "helyszin": "Ln/15",
+          "oktato": "Kiss Áron",
+          "szak": "programtervező informatikus"
+        },
+        {
+          "targy": "Játék prototípusok",
+          "idopont": {
+            "nap": "csütörtök",
+            "tol": 18,
+            "ig": 20
+          },
+          "helyszin": "Ln/15",
+          "oktato": "Kiss Áron",
+          "szak": "programtervező informatikus"
+        }
+      ]
+    }
+  }
