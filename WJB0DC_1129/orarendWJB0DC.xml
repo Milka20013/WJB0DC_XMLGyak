@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="orarendWJB0DC.xsl" type="text/xsl"?>
+<WJB0DC_orarend>
+    <ora id="1" tipus="elmélet">
+        <targy>Mesterséges intelligencia</targy>
+        <idopont>
+            <nap>kedd</nap>
+            <tol>10</tol>
+            <ig>12</ig>
+        </idopont>
+        <helyszin>XXXII A1 magasfsz</helyszin>
+        <oktato>Kunné Dr. Tamás Judit</oktato>
+        <szak>programtervező informatikus</szak>
+    </ora>
+    <ora id="2" tipus="elmélet">
+        <targy>Adatkezelés XML-ben</targy>
+        <idopont>
+            <nap>kedd</nap>
+            <tol>12</tol>
+            <ig>14</ig>
+        </idopont>
+        <helyszin>XXXII A1 magasfsz</helyszin>
+        <oktato>Dr. Bednarik László</oktato>
+        <szak>programtervező informatikus</szak>
+    </ora>
+    <ora id="3" tipus="elmélet">
+        <targy>Algoritmusok és vizsgálatuk</targy>
+        <idopont>
+            <nap>kedd</nap>
+            <tol>14</tol>
+            <ig>16</ig>
+        </idopont>
+        <helyszin>A1/320 III emelet</helyszin>
+        <oktato>Dr. Házy Attila</oktato>
+        <szak>programtervező informatikus</szak>
+    </ora>
+    <ora id="4" tipus="gyakorlat">
+        <targy>Algoritmusok és vizsgálatuk</targy>
+        <idopont>
+            <nap>kedd</nap>
+            <tol>16</tol>
+            <ig>18</ig>
+        </idopont>
+        <helyszin>A1/320 III emelet</helyszin>
+        <oktato>Dr. Házy Attila</oktato>
+        <szak>programtervező informatikus</szak>
+    </ora>
+    <ora id="5" tipus="gyakorlat">
+        <targy>Adatkezelés XML-ben</targy>
+        <idopont>
+            <nap>szerda</nap>
+            <tol>12</tol>
+            <ig>14</ig>
+        </idopont>
+        <helyszin>Ln/103</helyszin>
+        <oktato>Dr. Bednarik László</oktato>
+        <szak>programtervező informatikus</szak>
+    </ora>
+    <ora id="6" tipus="elmélet">
+        <targy>Vállalati információs rendszerek</targy>
+        <idopont>
+            <nap>kedd</nap>
+            <tol>12</tol>
+            <ig>14</ig>
+        </idopont>
+        <helyszin>Ln/101</helyszin>
+        <oktato>Dr. Sasvári Péter</oktato>
+        <szak>programtervező informatikus</szak>
+    </ora>
+    <ora id="7" tipus="gyakorlat">
+        <targy>Vállalati információs rendszerek</targy>
+        <idopont>
+            <nap>kedd</nap>
+            <tol>18</tol>
+            <ig>20</ig>
+        </idopont>
+        <helyszin>Ln/101</helyszin>
+        <oktato>Dr. Sasvári Péter</oktato>
+        <szak>programtervező informatikus</szak>
+    </ora>
+    <ora id="8" tipus="gyakorlat">
+        <targy>Mesterséges intelligencia</targy>
+        <idopont>
+            <nap>csütörtök</nap>
+            <tol>10</tol>
+            <ig>12</ig>
+        </idopont>
+        <helyszin>I A2 fsz</helyszin>
+        <oktato>Fazekas Levente</oktato>
+        <szak>programtervező informatikus</szak>
+    </ora>
+    <ora id="9" tipus="elmélet">
+        <targy>Játék prototípusok</targy>
+        <idopont>
+            <nap>csütörtök</nap>
+            <tol>16</tol>
+            <ig>18</ig>
+        </idopont>
+        <helyszin>Ln/15</helyszin>
+        <oktato>Kiss Áron</oktato>
+        <szak>programtervező informatikus</szak>
+    </ora>
+    <ora id="10" tipus="gyakorlat">
+        <targy>Játék prototípusok</targy>
+        <idopont>
+            <nap>csütörtök</nap>
+            <tol>18</tol>
+            <ig>20</ig>
+        </idopont>
+        <helyszin>Ln/15</helyszin>
+        <oktato>Kiss Áron</oktato>
+        <szak>programtervező informatikus</szak>
+    </ora>
+</WJB0DC_orarend>
