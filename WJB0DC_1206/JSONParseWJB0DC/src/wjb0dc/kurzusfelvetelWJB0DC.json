@@ -1,0 +1,42 @@
+{
+  "WJB0DC_kurzusfelvetel": {
+    "hallgato": {
+      "hnev": "Bordás Milán",
+      "szulev": 2002,
+      "szak": "Programtervezõ informatikus"
+    },
+    "kurzusok": {
+      "kurzus": [
+        {
+          "kurzusnev": "XML",
+          "kredit": 5,
+          "hely": 30,
+          "idopont": "szerda 12-14",
+          "oktato": "Dr. Bednarik László"
+        },
+        {
+          "kurzusnev": "Mesterséges intelligencia",
+          "kredit": 5,
+          "hely": 120,
+          "idopont": "kedd 10-12",
+          "oktato": "Dr. Kunné Tamás Judit",
+          "oraado": "Fazekas Levente"
+        },
+        {
+          "kurzusnev": "Játék prototipusok",
+          "kredit": 5,
+          "hely": 10,
+          "idopont": "csütörtök 16-20",
+          "oktato": "Kiss Áron"
+        },
+        {
+          "kurzusnev": "Vállalati Információs Rendszerek",
+          "kredit": 5,
+          "hely": 60,
+          "idopont": "szerda 14-16",
+          "oktato": "Dr. Sasvári Péter"
+        }
+      ]
+    }
+  }
+}
