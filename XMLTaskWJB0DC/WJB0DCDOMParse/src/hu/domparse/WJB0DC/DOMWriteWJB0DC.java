@@ -18,11 +18,11 @@ import org.xml.sax.SAXException;
 
 public class DOMWriteWJB0DC {
 
-	public static void WriteDocument(String filePath)
+	public static void WriteDocument(String inputFilePath, String outputFilePath)
 	{
 		try 
         {
-            File inputFile = new File(filePath);
+            File inputFile = new File(inputFilePath);
             
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
@@ -35,12 +35,13 @@ public class DOMWriteWJB0DC {
             TransformerFactory transformerFactory = TransformerFactory.newInstance();
             Transformer transformer = transformerFactory.newTransformer();
             DOMSource source = new DOMSource(document);
+            
             //kiirjuk az xmlt a consolera
             StreamResult consoleResult = new StreamResult(System.out);
             transformer.transform(source, consoleResult);
             
             //kiirjuk fájlba az xmlt
-            StreamResult result = new StreamResult(new File("WJB0DC1.xml"));
+            StreamResult result = new StreamResult(new File(outputFilePath));
             transformer.transform(source, result);
 
         } 

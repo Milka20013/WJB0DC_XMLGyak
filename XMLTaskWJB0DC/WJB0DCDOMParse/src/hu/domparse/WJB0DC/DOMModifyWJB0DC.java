@@ -39,10 +39,15 @@ public class DOMModifyWJB0DC {
 		//kiiratáshoz használjuk a már megírt metódusokat
 		//ne írjunk fileba
 		DOMReadWJB0DC.writeToFile = false;
+		System.out.println("----A csapatok azonosítójainak változása:----\n");
 		DOMReadWJB0DC.PrintNodeList(csapatok);
+		System.out.println("\n----A születési dátum 1999-12-01 lett:----\n");
 		DOMReadWJB0DC.PrintNodes(szuletesiDatumNode, 1);
+		System.out.println("\nAz első játék azonosítója 0 kell legyen:----\n");
 		DOMReadWJB0DC.PrintNodes(jatek, 1);
+		System.out.println("\n----Az utolsó vezetőnek neve Utolsó Vezető:----\n");
 		DOMReadWJB0DC.PrintNodes(vezeto, 1);
+		System.out.println("\n----Az utolsó versenyez tábla a Kerge Kecskék versényét mutatja a 2. versenyen :----\n");
 		DOMReadWJB0DC.PrintNodes(versenyezTabla, 1);
 	}
 }
